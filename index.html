@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Millwork | Custom Millwork & Woodwork Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #8B5A2B;
+        }
+        
+        .tail-container {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #8B5A2B;
+            transform: translateY(-2px);
+        }
+
+        .project-card {
+            transition: all 0.4s ease;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="tail-container text-gray-900">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-amber-800 rounded-xl flex items-center justify-center text-white font-bold text-2xl">BM</div>
+                <div>
+                    <span class="text-2xl font-semibold tracking-tight heading-font">Brooklyn Millwork</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div>
+                <a href="#contact" 
+                   class="bg-amber-800 hover:bg-amber-900 text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    GET A FREE ESTIMATE
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-3xl text-sm mb-6">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                SERVING NY • NJ • CT
+            </div>
+            
+            <h1 class="text-7xl md:text-8xl font-bold heading-font leading-none mb-6">
+                CUSTOM MILLWORK<br>&amp; WOODWORK
+            </h1>
+            
+            <p class="text-2xl max-w-2xl mx-auto mb-10 text-white/90">
+                Elevate your space with decades of craftsmanship. 
+                Residential &amp; Commercial solutions in New York, New Jersey, and Connecticut.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" 
+                   class="bg-white text-amber-900 hover:bg-amber-100 px-10 py-5 rounded-2xl text-lg font-semibold inline-flex items-center justify-center gap-3">
+                    START YOUR PROJECT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#portfolio" 
+                   class="border border-white hover:bg-white/10 px-10 py-5 rounded-2xl text-lg font-semibold inline-flex items-center justify-center">
+                    VIEW OUR WORK
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-12 text-sm">
+                <div>
+                    <div class="text-4xl font-semibold">1200+</div>
+                    <div class="text-white/70">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold">10K+</div>
+                    <div class="text-white/70">Sq Ft Facility</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold">97%</div>
+                    <div class="text-white/70">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-gray-50 py-6 border-b">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-center text-gray-500 text-sm mb-4">TRUSTED BY</p>
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-75">
+                <div class="text-2xl font-medium">Corcoran</div>
+                <div class="text-2xl font-medium">Bank of America</div>
+                <div class="text-2xl font-medium">Venmo</div>
+                <div class="text-2xl font-medium">VU Condominiums</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="uppercase tracking-widest text-amber-800 text-sm font-medium">One-Stop Shop</span>
+                <h2 class="text-5xl heading-font font-semibold mt-2">A-to-Z Millwork Solutions</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:border-amber-200 transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-clipboard-list text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Project Planning</h3>
+                    <p class="text-gray-600">Professional project planning and management for any complexity of millwork and woodworking projects.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:border-amber-200 transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hammer text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Millwork Contracting</h3>
+                    <p class="text-gray-600">With a strong dedication to sustainability and a loyal base of returning clients.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:border-amber-200 transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-calculator text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Transparent Bidding</h3>
+                    <p class="text-gray-600">Get a free, detailed estimate ensuring transparency and quality with competitive pricing.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:border-amber-200 transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-industry text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">In-house Fabrication</h3>
+                    <p class="text-gray-600">State-of-the-art equipment, cutting-edge software, and top professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="uppercase text-amber-800 text-sm">Our Projects</span>
+                    <h2 class="text-5xl heading-font font-semibold">Featured Work</h2>
+                </div>
+                <a href="#" class="text-amber-800 hover:underline flex items-center gap-2">
+                    View all projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/1015/800/600" alt="Pearl House" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="text-xs text-gray-500">NEW YORK, NY</div>
+                        <h3 class="text-2xl font-semibold mt-1">Pearl House</h3>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/133/800/600" alt="Williamsburg Townhouse" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="text-xs text-gray-500">WILLIAMSBURG, BROOKLYN</div>
+                        <h3 class="text-2xl font-semibold mt-1">Williamsburg Townhouse</h3>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/201/800/600" alt="Oriana" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="text-xs text-gray-500">NEW YORK, NY</div>
+                        <h3 class="text-2xl font-semibold mt-1">Oriana</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-7">
+                    <h2 class="text-5xl heading-font font-semibold leading-tight">We are Brooklyn Millwork</h2>
+                    <p class="mt-8 text-lg text-gray-600 max-w-prose">
+                        At Brooklyn Millwork, we shape experiences. Based in Brooklyn, NY, our 10,000+ sq ft facility and team of 100+ professionals deliver premium architectural millwork and custom cabinetry for high-net-worth individuals and Fortune 500 companies.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8 mt-12">
+                        <div>
+                            <div class="text-6xl font-semibold text-amber-800">97%</div>
+                            <p class="mt-2 text-gray-600">Customer satisfaction rate</p>
+                        </div>
+                        <div>
+                            <div class="text-6xl font-semibold text-amber-800">76%</div>
+                            <p class="mt-2 text-gray-600">Repeat / Loyal clients</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5 bg-gray-100 rounded-3xl p-10">
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="text-5xl font-light text-amber-800">12+</div>
+                            <div>
+                                <div class="font-medium">Years of Excellence</div>
+                                <div class="text-sm text-gray-500">Serving the Tri-State area since 2013</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-5xl font-light text-amber-800">1200+</div>
+                            <div>
+                                <div class="font-medium">Projects Delivered</div>
+                                <div class="text-sm text-gray-500">Across residential and commercial spaces</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-24 bg-amber-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-center text-5xl heading-font font-semibold mb-16">What Our Clients Say</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl">
+                    <p class="italic text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exceptional attention to detail and on-time delivery."</p>
+                    <div class="mt-8 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div>
+                            <div class="font-medium">Alexandra Carter</div>
+                            <div class="text-sm text-gray-500">The Corcoran Group</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for more testimonials -->
+                <div class="bg-white p-8 rounded-3xl">
+                    <p class="italic text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exceptional attention to detail and on-time delivery."</p>
+                    <div class="mt-8 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div>
+                            <div class="font-medium">Ron Marks</div>
+                            <div class="text-sm text-gray-500">Designer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <p class="italic text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exceptional attention to detail and on-time delivery."</p>
+                    <div class="mt-8 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div>
+                            <div class="font-medium">Jane Doe</div>
+                            <div class="text-sm text-gray-500">VU Condominiums</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl heading-font font-semibold">Take the Next Step</h2>
+                <p class="mt-4 text-xl text-gray-600">Schedule a meeting • Get project planning help • Receive a free estimate</p>
+            </div>
+            
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 p-10 rounded-3xl" onsubmit="handleSubmit(event)">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Full Name</label>
+                    <input type="text" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-amber-800" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email Address</label>
+                    <input type="email" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-amber-800" required>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-sm font-medium mb-2">Project Description</label>
+                    <textarea class="w-full px-6 py-4 rounded-3xl border h-40 focus:outline-none focus:border-amber-800" required></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" 
+                            class="w-full bg-amber-800 hover:bg-amber-900 text-white py-6 rounded-3xl text-lg font-semibold transition-all">
+                        SEND MESSAGE — GET FREE ESTIMATE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <div class="w-10 h-10
