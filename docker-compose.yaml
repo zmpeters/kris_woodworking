@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: zach/kriswoodworking:latest
+    container_name: hello-world-web
+    ports:
+      - "8088:80"
+    restart: always
