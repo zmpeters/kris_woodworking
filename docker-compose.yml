@@ -6,10 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     image: kriswoodworking-site:latest
-    container_name: kriswoodworking
+    container_name: kriswoodworking-git
     volumes:
       - ./:/usr/share/nginx/html:ro
     ports:
-      - "6680:80"
+      - "6689:80"
     restart: unless-stopped
 
