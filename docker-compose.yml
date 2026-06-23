@@ -7,6 +7,8 @@ services:
       dockerfile: Dockerfile
     image: kriswoodworking-site:latest
     container_name: kriswoodworking
+    volumes:
+      - ./:/usr/share/nginx/html:ro
     ports:
       - "6680:80"
     restart: unless-stopped
