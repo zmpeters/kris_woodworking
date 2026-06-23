@@ -1,0 +1,73 @@
+/* ====================== styles.css ====================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary: #8B5A2B;
+}
+
+.tail-container {
+    font-family: 'Inter', system_ui, sans-serif;
+}
+
+.heading-font {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/* Hero Background */
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://picsum.photos/id/1015/2000/1200');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #8B5A2B;
+    transform: translateY(-2px);
+}
+
+/* Project Cards */
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 
+                0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* General Enhancements */
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
+
+.text-amber-800 {
+    color: #8B5A2B;
+}
+
+.bg-amber-800 {
+    background-color: #8B5A2B;
+}
+
+.hover\:bg-amber-900:hover {
+    background-color: #6B4421;
+}
+
+/* Optional: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Make sure Tailwind classes still work */
+@layer base {
+    body {
+        font-feature-settings: "kern" 1;
+    }
+}
