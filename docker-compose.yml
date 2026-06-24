@@ -8,7 +8,7 @@ services:
     image: kriswoodworking-site:latest
     container_name: kriswoodworking-git
     volumes:
-      - ./:/usr/share/nginx/html:ro
+      - ./:/portainer/Files/AppData/Config/Nginx/www:ro
     ports:
       - "6689:80"
     restart: unless-stopped
